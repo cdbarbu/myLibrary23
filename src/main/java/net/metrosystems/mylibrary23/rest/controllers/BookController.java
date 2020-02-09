@@ -18,15 +18,13 @@ import java.util.Optional;
 
 @RestController
 public class BookController {
+    @Autowired
     private BookRepository repository;
 
-    @Autowired
-    BookController(BookRepository repository) {
-        this.repository = repository;
-    }
-
 //    @Autowired
-//    private BookRepository repository;
+//    BookController(BookRepository repository) {
+//        this.repository = repository;
+//    }
 
     // get all books
     @GetMapping("/books") // produces = json este DEFAULT

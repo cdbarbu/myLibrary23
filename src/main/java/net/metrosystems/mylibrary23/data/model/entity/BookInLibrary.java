@@ -107,7 +107,7 @@ public class BookInLibrary {
     public String toString() {
         return "BookInLibrary{" +
                 "id=" + id +
-                //", book=" + book +
+                ", bookId=" + book.getId() +
                 ", library=" + library +
                 ", priceInEur=" + priceInEur +
                 ", noPieces=" + noPieces +
